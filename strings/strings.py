@@ -5,8 +5,8 @@
 #  Initialize the 'newString' variable as any kind of non-empty string
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
+newString = "Hello Simvo"
 
-newString = None
 
 ########################################################################
 
@@ -22,7 +22,8 @@ getMyDataType = "This is a string"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-gotDataType = None
+gotDataType = type(getMyDataType)
+
 
 ########################################################################
 
@@ -39,7 +40,8 @@ getMyLenght = "Get the length of this string"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-myLength = None
+myLength = len(getMyLenght)
+
 
 ########################################################################
 
@@ -58,7 +60,8 @@ concat3 = "father!"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-concatStrings = None
+concatStrings = concat1 + concat2 + concat3
+
 
 ########################################################################
 
@@ -78,7 +81,8 @@ repeatMe = "Let it snow! "
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-repeatedString = None
+repeatedString = repeatMe * repeatTimes
+
 
 ########################################################################
 
@@ -96,7 +100,8 @@ subString = "out"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-stringContains = None
+stringContains = subString in mainString
+
 
 ########################################################################
 
@@ -114,7 +119,7 @@ subStringToFind = "best"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-foundSubstringIndex = None
+foundSubstringIndex = findSubstring.find(subStringToFind)
 
 ########################################################################
 
@@ -130,7 +135,8 @@ getFirstCharacter = "You need my first character"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-firstCharacter = None
+firstCharacter = getFirstCharacter[0]
+
 
 ########################################################################
 
@@ -146,7 +152,8 @@ getFirstSevenCharacters = "You need my first seven characters"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-firstSevenCharacters = None
+firstSevenCharacters = getFirstSevenCharacters[0:7]
+
 
 ########################################################################
 
@@ -162,7 +169,9 @@ getLastCharacter = "You need my last character don't ya?"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-lastCharacter = None
+
+lastCharacter = getLastCharacter[-1]
+
 
 ########################################################################
 
@@ -178,7 +187,8 @@ getLastFourCharacters = "You need my last four characters don't ya?"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-lastFourCharacters = None
+lastFourCharacters = getLastFourCharacters[-4:]
+
 
 ########################################################################
 
@@ -196,7 +206,7 @@ checkEquality2 = "Are we equal?"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-stringsAreEqual = None
+stringsAreEqual = checkEquality1 == checkEquality2
 
 ########################################################################
 
@@ -214,7 +224,12 @@ checkEqualityIgnoreCase2 = "are we EQUAL?"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-stringsAreEqualIgnoreCase = None
+
+stringsAreEqualIgnoreCase = (
+    checkEqualityIgnoreCase1.upper()
+    == checkEqualityIgnoreCase2.upper()
+)
+
 
 ########################################################################
 
@@ -230,7 +245,8 @@ replaceMe = "John just moved to Montreal. John will be meeting his roomate soon.
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-replacedString = None
+replacedString = replaceMe.replace("John", "Michael")
+
 
 ########################################################################
 
@@ -247,7 +263,8 @@ removeMe = "We will going to be leaving at noon sharp."
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-removedString = None
+removedString = removeMe.replace("going to ", "")
+
 
 ########################################################################
 
@@ -267,6 +284,10 @@ targetString1 = "THE-QUICK-BROWN-FOX-JUMPS-OVER-THE-LAZY-DOG"
 #  variable - feel free to do this in multiple steps
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
+
+
+testString1 = testString1.upper()
+testString1 = testString1.replace(" ", "-")
 
 
 
@@ -289,7 +310,11 @@ targetString2 = "i am the second best, you are the first best!"
 #
 ###################### YOUR CODE BELOW THIS LINE #######################
 
-testString2 = None
+
+testString2 = testString2.lower()
+testString2 = testString2.replace("first sentence.", "second best,")
+testString2 = testString2.replace("second sentence", "first best!")
+
 
 ########################################################################
 
